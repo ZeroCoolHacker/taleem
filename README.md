@@ -22,28 +22,6 @@ Also, includes a Heroku `app.json` and a working Django `production.py` settings
 
 This is a good starting point for modern Python/JavaScript web projects.
 
-## Project bootstrap [![CircleCI](https://circleci.com/gh/vintasoftware/django-react-boilerplate.svg?style=svg)](https://circleci.com/gh/vintasoftware/django-react-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/vintasoftware/django-react-boilerplate.svg)](https://greenkeeper.io/)
-- [x] Make sure you have Python 3.8 installed
-- [x] Install Django with `pip install django`, to have the `django-admin` command available.
-- [x] Open the command line and go to the directory you want to start your project in.
-- [x] Start your project using:
-```
-django-admin startproject theprojectname --extension py,yml,json --name Procfile,Dockerfile,README.md,.env.example,.gitignore --template=https://github.com/vintasoftware/django-react-boilerplate/archive/boilerplate-release.zip
-```
-In the next steps, always remember to replace theprojectname with your project's name
-- [x] Above: don't forget the `--extension` and `--name` params!
-- [x] Navigate to the project's directory through your command line.
-- [x] Create a new virtualenv with either [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) or only virtualenv: `mkvirtualenv taleem` or `python -m venv taleem-venv`.
-    > If you're using Python's virtualenv (the latter option), make sure to create the environment with the suggested name, otherwise it will be added to version control.
-- [x] Make sure the virtualenv is activated `workon taleem` or `source taleem-venv/bin/activate`.
-- [x] Compile the requirements before installation and install them:  `make compile_install_requirements`
-- [x] Change the first line of README to the name of the project
-- [x] Add an email address to the `ADMINS` settings variable in `taleem/backend/taleem/settings/base.py`
-- [x] Change the `SERVER_EMAIL` to the email address used to send e-mails in `taleem/backend/taleem/settings/production.py`
-- [x] Rename the folder `circleci` to `.circleci` with the command `mv circleci .circleci`
-
-After completing ALL of the above, remove this `Project bootstrap` section from the project README. Then follow `Running` below.
-
 ## Running
 ### Setup
 - Inside the `backend` folder, do the following:
